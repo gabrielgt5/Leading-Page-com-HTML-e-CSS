@@ -1,5 +1,5 @@
 ## Escopo do projeto:
-Uma empresa de TI quer desenvolver uma página destinada a novas contratações e contratou você para desenvolvê-la.
+Uma empresa de TI quer desenvolver uma página destinada a novas contratações.
 
 - **Referência(Figma):** [https://www.figma.com/design/mm3MLozvUDGhDRTxSLlGL5/7daysOfCode-HTML-CSS?node-id=0-1&node-type=canvas&t=sBCfGRbq40ngj7BY-0](Acesse-aqui)
 
