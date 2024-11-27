@@ -5,4 +5,4 @@ Uma empresa de TI quer desenvolver uma página destinada a novas contratações 
 
 ### Dia 01 - Navbar
 - [x] Esqueleto: Logo, página de botões 
-- [] Aplicar responsividade
+- [ ] Aplicar responsividade
