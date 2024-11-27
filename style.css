@@ -1,0 +1,88 @@
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+:root {
+    --cor-primaria: #8E2424;
+    --cor-secundaria: #8E24240D;
+    --cor-cinza: #667085;
+    --cor-branca: #FFFFFF;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    height: 5rem;
+}
+
+.navbar {
+    display: flex;
+    width: 1280px;
+    align-items: center;
+    justify-items: center;
+    padding-inline: 2rem;
+    padding-block: 0.5rem;
+    justify-content: space-between;
+    /* justify-content: center; */
+    /* background-color: blue; */
+}
+
+.navItens{
+    display: flex;
+    gap: 2rem;
+}
+
+
+.navItemLink{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cor-cinza);
+}
+
+.navItemLink:hover{
+    color: var(--cor-primaria);
+}
+.groupButtons {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.btnEntrar {
+    background-color: transparent;
+    font-size: 1rem;
+    border: none;
+    color: var(--cor-cinza);
+    padding:  0.625rem 1.125rem ;
+    font-weight: 500;
+
+}
+.btnEntrar:hover{
+    animation: alternate;
+    animation-duration: 500ms;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    cursor: pointer;
+    border-radius: .5rem;
+
+}
+
+.btnCadastrar{
+    width: 7rem;
+    height: 2.75rem;
+    font-size: 1rem;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    border: none;
+    border-radius: .5rem;
+    padding:  0.625rem 1.125rem ;
+    font-weight: 500;
+}
+
+.btnCadastrar:hover{
+    background-color: var(--cor-primaria);
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.10);
+    cursor: pointer;
+}
