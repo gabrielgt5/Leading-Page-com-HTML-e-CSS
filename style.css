@@ -5,6 +5,7 @@
 :root {
     --cor-primaria: #8E2424;
     --cor-secundaria: #8E24240D;
+    --cor-text: #101828;
     --cor-cinza: #667085;
     --cor-branca: #FFFFFF;
 }
@@ -85,4 +86,36 @@
     background-color: var(--cor-primaria);
     box-shadow: 0 6px 10px rgb(0 0 0 / 0.10);
     cursor: pointer;
+}
+
+.sobreNos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 25.438rem;
+    gap: 1.5rem;
+    margin: auto;
+}
+
+.sobreNosSpan {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cor-primaria);
+
+}
+
+.sobreNosTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--cor-text);
+}
+
+
+.sobreNosParagraph{
+    max-width: 49.5rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cor-cinza);
 }
