@@ -10,4 +10,4 @@ Uma empresa de TI quer desenvolver uma página destinada a novas contratações.
 - [x] desenvolver a primeira seção da sua página (Cabeçalho) 
 
 ### Dia 03 - Seção de metricas e resultados
-- [ ] desenvolver seção de métricas e resultados 
+- [x] desenvolver seção de métricas e resultados 
