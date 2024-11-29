@@ -5,9 +5,9 @@ Uma empresa de TI quer desenvolver uma página destinada a novas contratações.
 
 ### Dia 01 - Navbar
 - [x] Esqueleto: Logo, página de botões 
-- [ ] Aplicar responsividade
 
 ### Dia 02 - Cabeçalho
 - [x] desenvolver a primeira seção da sua página (Cabeçalho) 
-- [x] Aplicar responsividade
 
+### Dia 03 - Seção de metricas e resultados
+- [ ] desenvolver seção de métricas e resultados 

@@ -119,3 +119,44 @@
     font-weight: 400;
     color: var(--cor-cinza);
 }
+
+.metricas{
+    display: flex;
+    height: 18rem;
+    width: 1280px;
+    padding-inline: 2rem;
+    margin: auto;
+    gap: 2rem;
+}
+
+.metricasIten{
+    width: 100%;
+    height: fit-content;
+}
+
+
+.metricasNumero{
+    color: var(--cor-primaria);
+    font-weight: 600;
+    font-size: 3.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.metricasInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.metricasInfoSpan{
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--cor-text);
+}
+.metricasInfoParagraph{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cor-cinza);
+
+}
