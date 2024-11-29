@@ -11,3 +11,6 @@ Uma empresa de TI quer desenvolver uma página destinada a novas contratações.
 
 ### Dia 03 - Seção de metricas e resultados
 - [x] desenvolver seção de métricas e resultados 
+
+### Dia 03 - Seção de Vagas abertas
+- [x] desenvolver seção inicial de vagas abertas

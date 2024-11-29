@@ -1,162 +1,195 @@
-*{
-    font-family: 'Inter', sans-serif;
-    margin: 0;
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
 }
 :root {
-    --cor-primaria: #8E2424;
-    --cor-secundaria: #8E24240D;
-    --cor-text: #101828;
-    --cor-cinza: #667085;
-    --cor-branca: #FFFFFF;
+  --cor-primaria: #8e2424;
+  --cor-secundaria: #8e24240d;
+  --cor-text: #101828;
+  --cor-cinza: #667085;
+  --cor-branca: #ffffff;
 }
 
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: red; */
-    height: 5rem;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  height: 5rem;
 }
 
 .navbar {
-    display: flex;
-    width: 1280px;
-    align-items: center;
-    justify-items: center;
-    padding-inline: 2rem;
-    padding-block: 0.5rem;
-    justify-content: space-between;
-    /* justify-content: center; */
-    /* background-color: blue; */
+  display: flex;
+  width: 80rem;
+  align-items: center;
+  justify-items: center;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  justify-content: space-between;
+  /* justify-content: center; */
+  /* background-color: blue; */
 }
 
-.navItens{
-    display: flex;
-    gap: 2rem;
+.navItens {
+  display: flex;
+  gap: 2rem;
 }
 
-
-.navItemLink{
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--cor-cinza);
+.navItemLink {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--cor-cinza);
 }
 
-.navItemLink:hover{
-    color: var(--cor-primaria);
+.navItemLink:hover {
+  color: var(--cor-primaria);
 }
 .groupButtons {
-    display: flex;
-    gap: 0.75rem;
+  display: flex;
+  gap: 0.75rem;
 }
 
 .btnEntrar {
-    background-color: transparent;
-    font-size: 1rem;
-    border: none;
-    color: var(--cor-cinza);
-    padding:  0.625rem 1.125rem ;
-    font-weight: 500;
-
+  background-color: transparent;
+  font-size: 1rem;
+  border: none;
+  color: var(--cor-cinza);
+  padding: 0.625rem 1.125rem;
+  font-weight: 500;
 }
-.btnEntrar:hover{
-    animation: alternate;
-    animation-duration: 500ms;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-primaria);
-    cursor: pointer;
-    border-radius: .5rem;
-
+.btnEntrar:hover {
+  animation: alternate;
+  animation-duration: 500ms;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  cursor: pointer;
+  border-radius: 0.5rem;
 }
 
-.btnCadastrar{
-    width: 7rem;
-    height: 2.75rem;
-    font-size: 1rem;
-    background-color: var(--cor-primaria);
-    color: var(--cor-branca);
-    border: none;
-    border-radius: .5rem;
-    padding:  0.625rem 1.125rem ;
-    font-weight: 500;
+.btnCadastrar {
+  width: 7rem;
+  height: 2.75rem;
+  font-size: 1rem;
+  background-color: var(--cor-primaria);
+  color: var(--cor-branca);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.625rem 1.125rem;
+  font-weight: 500;
 }
 
-.btnCadastrar:hover{
-    background-color: var(--cor-primaria);
-    box-shadow: 0 6px 10px rgb(0 0 0 / 0.10);
-    cursor: pointer;
+.btnCadastrar:hover {
+  background-color: var(--cor-primaria);
+  box-shadow: 0 6px 10px rgb(0 0 0 / 0.1);
+  cursor: pointer;
 }
 
-.sobreNos{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    height: 25.438rem;
-    gap: 1.5rem;
-    margin: auto;
+.sobreNos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 25.438rem;
+  gap: 1.5rem;
+  margin: auto;
 }
 
 .sobreNosSpan {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--cor-primaria);
-
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--cor-primaria);
 }
 
-.sobreNosTitle{
-    font-size: 3rem;
-    font-weight: 600;
-    color: var(--cor-text);
+.sobreNosTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--cor-text);
 }
 
-
-.sobreNosParagraph{
-    max-width: 49.5rem;
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: var(--cor-cinza);
+.sobreNosParagraph {
+  max-width: 49.5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--cor-cinza);
 }
 
-.metricas{
-    display: flex;
-    height: 18rem;
-    width: 1280px;
-    padding-inline: 2rem;
-    margin: auto;
-    gap: 2rem;
+.metricas {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 80rem;
+  height: 18rem;
+  padding-inline: 2rem;
+  gap: 2rem;
 }
 
-.metricasIten{
-    width: 100%;
-    height: fit-content;
+.metricasIten {
+  width: 100%;
+  height: fit-content;
 }
 
-
-.metricasNumero{
-    color: var(--cor-primaria);
-    font-weight: 600;
-    font-size: 3.75rem;
-    margin-bottom: 0.75rem;
+.metricasNumero {
+  color: var(--cor-primaria);
+  font-weight: 600;
+  font-size: 3.75rem;
+  margin-bottom: 0.75rem;
 }
 
-.metricasInfo{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+.metricasInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-
-.metricasInfoSpan{
-    font-size: 1.125rem;
-    font-weight: 500;
-    color: var(--cor-text);
+.metricasInfoSpan {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--cor-text);
 }
-.metricasInfoParagraph{
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--cor-cinza);
+.metricasInfoParagraph {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--cor-cinza);
+}
 
+.vagasAbertas {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-block: 6rem;
+}
+
+.vagasAbertasSpan {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--cor-primaria);
+  background-color: var(--cor-secundaria);
+  padding-inline: 0.75rem;
+  padding-block: 0.25rem;
+  border-radius: 1rem;
+}
+
+.vagasAbertasTitulo {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--cor-text);
+  margin-top: 1rem;
+}
+
+.vagasAbertasParagraph {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--cor-cinza);
+  margin-top: 1.25rem;
+}
+
+.vagasAbertasImagem {
+  margin-top: 4rem;
 }
