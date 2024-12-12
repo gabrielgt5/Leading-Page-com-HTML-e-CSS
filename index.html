@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,24 +13,42 @@
   </head>
   <body>
     <header class="header">
-      <div class="navbar">
+      <div class="nav">
         <a href="#">
           <img
             src="Assets/Image/logo.svg"
             alt="logo com um ícone de um globo vermelho escrito OptimusTech"
           />
         </a>
-        <div class="navItens">
-          <a class="navItemLink" href="#">Home</a>
-          <a class="navItemLink" href="#">Produtos</a>
-          <a class="navItemLink" href="#">Recursos</a>
-          <a class="navItemLink" href="#">Sobre nós</a>
-        </div>
-        <div class="groupButtons">
-          <button class="btnEntrar">Entrar</button>
-          <button class="btnCadastrar">Cadastrar</button>
+        <div class="menuToggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
+      <!-- Menu Desktop -->
+      <nav class="navDesktop">
+        <a class="navItemLink" href="#">Home</a>
+        <a class="navItemLink" href="#">Vagas</a>
+        <a class="navItemLink" href="#">Recursos</a>
+        <a class="navItemLink" href="#">Sobre nós</a>
+      </nav>
+      <div class="groupButtons">
+        <button class="btnEntrar">Entrar</button>
+        <button class="btnCadastrar">Cadastrar</button>
+      </div>
+
+      <!-- Menu mobile -->
+      <nav class="navMobile" id="navbarMobile">
+        <ul class="listLink">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Vagas</a></li>
+          <li><a href="#">Recursos</a></li>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Entrar</a></li>
+          <li><a href="#">Cadastrar</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="sobreNos">
@@ -83,6 +101,7 @@
           </div>
         </div>
       </section>
+
       <section class="vagasAbertas">
         <span class="vagasAbertasSpan">Vagas abertas!</span>
         <h3 class="vagasAbertasTitulo">Estamos procurando por talentos</h3>
@@ -95,6 +114,48 @@
           class="vagasAbertasImagem"
         />
       </section>
+      <section class="vagas">
+        <h4 class="vagasTitulo">Design</h4>
+        <div class="cardVagas">
+          <span class="cardTitulo">Product Designer</span>
+          <div class="cardInfomacoes">
+            <span>Full time</span>
+            <span>Faixa salarial: R$7.000</span>
+          </div>
+        </div>
+        <div class="cardVagas">
+          <span class="cardTitulo">UX Designer</span>
+          <div class="cardInfomacoes">
+            <span>Full time</span>
+            <span>Faixa salarial: R$6.000</span>
+          </div>
+        </div>
+      </section>
+      <section class="vagas">
+        <h4 class="vagasTitulo">Desenvolvimento de Software</h4>
+        <div class="cardVagas">
+          <span class="cardTitulo">Desenvolvedor(a) iOS</span>
+          <div class="cardInfomacoes">
+            <span>Full time</span>
+            <span>Faixa salarial: R$8.000</span>
+          </div>
+        </div>
+        <div class="cardVagas">
+          <span class="cardTitulo">Desenvolvedor(a) Front-end</span>
+          <div class="cardInfomacoes">
+            <span>Full time</span>
+            <span>Faixa salarial: R$7.000</span>
+          </div>
+        </div>
+        <div class="cardVagas">
+          <span class="cardTitulo">Desenvolvedor(a) Back-end</span>
+          <div class="cardInfomacoes">
+            <span>Full time</span>
+            <span>Faixa salarial: R$8.000</span>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
