@@ -9,13 +9,48 @@
   --cor-cinza: #667085;
   --cor-branca: #ffffff;
   --cor-da-borda: #eaecf0;
+  --cor-do-footer: #f9fafb;
 }
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 0.5rem;
   height: 5rem;
+  width: 100%;
 }
+
+.navDesktop {
+  display: flex;
+  gap: 2rem;
+}
+
+.groupButtons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .navDesktop {
+    display: none;
+  }
+  .groupButtons {
+    display: none;
+  }
+}
+
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .menuToggle {
+    display: flex;
+  }
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -23,8 +58,13 @@
   padding-inline: 1rem;
   padding-block: 1.125rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    width: 100%;
+  }
+}
 .navbar {
-  background-color: aqua;
   display: flex;
   align-items: center;
   justify-items: center;
@@ -32,6 +72,7 @@
   padding-block: 0.5rem;
   justify-content: space-between;
 }
+
 .navMobile {
   position: absolute;
   display: none;
@@ -46,12 +87,6 @@
   box-shadow: 2px 10px 10px 1px rgb(0 0 0 / 20%);
   animation-duration: 2s;
   animation-name: slidein;
-}
-.menuToggle {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
 }
 .menuToggle span {
   background: var(--cor-cinza);
@@ -80,24 +115,6 @@
   font-weight: 500;
 }
 
-.navDesktop {
-  display: flex;
-  gap: 2rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .navDesktop,
-  .groupButtons,
-  .btnEntrar,
-  .btnCadastrar {
-    display: none;
-  }
-
-  .header {
-    display: block;
-  }
-}
-
 .navItemLink {
   text-decoration: none;
   font-size: 1rem;
@@ -107,10 +124,6 @@
 
 .navItemLink:hover {
   color: var(--cor-primaria);
-}
-.groupButtons {
-  display: flex;
-  gap: 0.75rem;
 }
 
 .btnEntrar {
@@ -159,12 +172,6 @@
   margin: auto;
 }
 
-@media only screen and (max-width: 768px) {
-  .sobreNos {
-    padding-inline: 1rem;
-  }
-}
-
 .sobreNosSpan {
   font-size: 1rem;
   font-weight: 600;
@@ -177,23 +184,11 @@
   color: var(--cor-text);
 }
 
-@media only screen and (max-width: 768px) {
-  .sobreNosTitle {
-    font-size: 2rem;
-  }
-}
-
 .sobreNosParagraph {
   max-width: 49.5rem;
   font-size: 1.25rem;
   font-weight: 400;
   color: var(--cor-cinza);
-}
-
-@media only screen and (max-width: 768px) {
-  .sobreNosParagraph {
-    font-size: 1rem;
-  }
 }
 
 .metricas {
@@ -314,4 +309,79 @@
   font-size: 0.75rem;
   font-weight: 500;
   color: var(--cor-cinza);
+}
+
+.feedback {
+  padding-inline: 1rem;
+  margin-bottom: 5rem;
+}
+
+.feedbackCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: var(--cor-secundaria);
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.feedbackSpan {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--cor-primaria);
+}
+
+.feedbackText {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--cor-text);
+}
+.avatar {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.avatarFoto {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.cardSpan {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.nomePessoa {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--cor-text);
+}
+
+.cargoPessoa {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--cor-cinza);
+}
+
+.footer {
+  background-color: var(--cor-do-footer);
+  margin-bottom: 5rem;
+}
+
+.newslleter {
+  padding-inline: 1rem;
+}
+
+.newslleterTexto {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
 }
