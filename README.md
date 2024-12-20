@@ -4,4 +4,4 @@ Uma empresa de TI quer desenvolver uma página destinada a novas contratações.
 - **Veja você mesmo:** [Acesse aqui](https://gabrielgt5.github.io/Leading-Page-com-HTML-e-CSS/)
 
 <hr>
-![mockup-optimusTech](https://github.com/user-attachments/assets/28b34eb9-f1a4-4b64-aa90-a20e32e6ea69)
+[mockup-optimusTech](https://github.com/user-attachments/assets/28b34eb9-f1a4-4b64-aa90-a20e32e6ea69)
