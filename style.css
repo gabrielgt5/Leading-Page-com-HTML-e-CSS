@@ -15,10 +15,12 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   height: 5rem;
-  width: 100%;
-  padding-inline: ;
+  width: auto;
+  max-width: 1280px;
+  margin-inline: auto;
 }
 
 .navDesktop {
@@ -29,6 +31,7 @@
 }
 
 .groupButtons {
+  padding-right: 1rem;
   display: flex;
   gap: 0.75rem;
 }
@@ -219,39 +222,48 @@
 }
 
 .metricas {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  padding-inline: 1rem;
+  display: flex;
+  width: auto;
+  margin-inline: auto;
+  justify-content: center;
   gap: 2rem;
-  text-align: center;
+  text-align: start;
 }
 
 .metricasIten {
-  width: 100%;
+  width: 280px;
   height: fit-content;
 }
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 1024px) {
   .metricas {
-    /* display: grid; */
+    width: auto;
+    display: grid;
+    margin-inline: 1rem;
     grid-template-columns: 50% 50%;
-    padding-inline: 1rem;
+    gap: 0.5rem;
   }
   .metricasIten {
-    width: 20rem;
+    width: auto;
   }
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 468px) {
   .metricas {
-    /* display: grid; */
-    grid-template-columns: 100%;
-    padding-inline: 1rem;
-    justify-content: center;
+    text-align: center;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-inline: 1rem;
+    gap: 0.5rem;
   }
   .metricasIten {
-    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    width: auto;
   }
 }
+
 .metricasNumero {
   color: var(--cor-primaria);
   font-weight: 600;
@@ -279,10 +291,11 @@
 .vagasAbertas {
   display: flex;
   flex-direction: column;
+  width: auto;
+  margin-inline: auto;
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin: auto;
   margin-block: 4rem;
 }
 
@@ -311,20 +324,37 @@
 }
 
 .vagasAbertasImagem {
-  height: 14rem;
-  width: 100%;
+  height: 400px;
+  width: auto;
   margin-top: 2rem;
   object-fit: cover;
+}
+
+@media only screen and (max-width: 1024px) {
+  .vagasAbertas {
+    width: 100%;
+  }
+  .vagasAbertasImagem {
+    height: 400px;
+    width: 100%;
+  }
 }
 
 .vagas {
   display: flex;
   flex-direction: column;
+  width: 768px;
+  margin-inline: auto;
   gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .vagas {
+    width: auto;
+  }
 }
 .vagasTitulo {
   text-align: start;
@@ -360,8 +390,17 @@
 }
 
 .feedback {
+  width: auto;
+  max-width: 1280px;
+  margin-inline: auto;
   padding-inline: 1rem;
   margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .feedback {
+    width: auto;
+  }
 }
 
 .feedbackCard {
@@ -381,7 +420,7 @@
 }
 
 .feedbackText {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 500;
   color: var(--cor-text);
 }
@@ -442,33 +481,30 @@
 }
 
 .newslleterTextoTitulo {
-  font-size: 1.125rem;
+  /* font-size: 1.125rem; */
+  font-size: 2rem;
+
   font-weight: 600;
   color: var(--cor-text);
 }
 
 .newslleterTextoDescricao {
-  font-size: 0.75rem;
+  /* font-size: 0.75rem; */
+  font-size: 1.25rem;
   font-weight: 400;
   color: var(--cor-cinza);
+  margin-bottom: 2.5rem;
 }
 
 .form {
   display: flex;
   width: 100%;
-  flex-direction: column;
+  justify-content: center;
+  flex-direction: row;
   align-items: center;
   gap: 1rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .form {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-  }
-}
 .input {
   background-color: var(--cor-branca);
   width: 22.5rem;
@@ -479,6 +515,26 @@
   border-radius: 0.5rem;
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+@media only screen and (max-width: 768px) {
+  .form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .newslleterTextoTitulo {
+    font-size: 1.125rem;
+  }
+  .newslleterTextoDescricao {
+    margin-bottom: 1.5rem;
+
+    font-size: 0.75rem;
+  }
+  .input {
+    width: 14rem;
+  }
 }
 
 .copyright {
